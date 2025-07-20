@@ -2,7 +2,7 @@
 
 [Live Demo](https://astro-platform-starter.netlify.app/)
 
-A modern sta2rter based on Astro.js, Tailwind, and [Netlify Core Primitives](https://docs.netlify.com/core/overview/#develop) (Edge Functions, Image CDN, Blob Store).
+A modern sta3rter based on Astro.js, Tailwind, and [Netlify Core Primitives](https://docs.netlify.com/core/overview/#develop) (Edge Functions, Image CDN, Blob Store).
 
 ## Astro Commands
 
