@@ -62,6 +62,7 @@ function tick() {
   } catch (err) {
     console.error('\nWrite failed:', err.code || err.message);
     logStats('FAIL');
+    throw err;
     process.exit(err.code === 'ENOSPC' ? 0 : 1);
   }
 }
