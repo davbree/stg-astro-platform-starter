@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
-    "build": "node --max-old-space-size=8192 disk-stress-test.js 1000 1000 disk-stress",
+    "build": "node --max-old-space-size=8192 disk-stress-test.cjs 1000 1000 disk-stress",
     "preview": "astro preview",
     "astro": "astro"
   },
