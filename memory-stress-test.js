@@ -36,7 +36,11 @@ console.log(
 function tick() {
   try {
     // Buffer allocates outside the JS heap → good for stressing container limits
-    blocks.push(Buffer.alloc(stepMB * MB, 0));
+    const block = Buffer.alloc(stepMB * MB);
+    for (let i = 0; i < block.length; i += 4096) {
+      block[i] = 0xAA;          // write once per page → forces physical commit
+    }
+    blocks.push(block);
     totalMB += stepMB;
     logStats('OK');
     setTimeout(tick, delayMs);
