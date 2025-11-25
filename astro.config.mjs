@@ -8,6 +8,6 @@ export default defineConfig({
     vite: {
         plugins: [tailwindcss()]
     },
-    integrations: [reat()],
+    integrations: [react()],
     adapter: netlify()
 });
