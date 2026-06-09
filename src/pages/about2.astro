@@ -1,0 +1,13 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Markdown from '../components/Markdown.astro';
+
+const explainer = `
+This is the About2 page. Use it to share more details about this project.
+`;
+---
+
+<Layout title="About2">
+    <h1 class="mb-10">About2</h1>
+    <Markdown content={explainer} class="mb-10 text-lg" />
+</Layout>
